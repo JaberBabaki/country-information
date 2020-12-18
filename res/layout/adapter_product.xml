@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:orientation="vertical" android:layout_margin="6dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" >
+
+                <ImageView
+                    android:id="@+id/imgIconProduct"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:src="@drawable/kj" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" android:layout_weight="0.5">
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/txtTitleProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="6dip"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:text="وصیت نامه شهیدان"
+                    android:textColor="#1BBC9B" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:orientation="vertical" android:layout_weight="0.5" android:gravity="bottom|right">
+
+                    <Button
+                        android:id="@+id/btnGetProduct"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="دریافت" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:src="#eeeeee"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" android:background="#ffffff">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtTextProduct"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right"
+                android:text="CustomTextView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

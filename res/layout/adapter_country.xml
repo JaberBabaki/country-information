@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="62dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:background="#ffffff"
+        android:gravity="right|center" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent" android:layout_weight="0.3" android:gravity="left|center">
+
+            <ImageView
+                android:id="@+id/imgFavoriteLocal"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="4dip"
+                android:src="@drawable/favo" />
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtLikeLocal"
+                android:layout_width="72dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:text="23456"
+                android:textColor="#797979"
+                android:textSize="18dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent" android:layout_weight="0.5" android:gravity="center">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtName"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="4dip"
+                android:gravity="right|center"
+                android:text="iran" android:layout_weight="0.7" android:textSize="18dip"/>
+
+            <com.jaber.country.CircleRoundedImageView
+                android:id="@+id/imgFlag"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/data" android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

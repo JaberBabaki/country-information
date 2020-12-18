@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:orientation="vertical" android:layout_height="400dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="vertical" android:background="#1BBC9B" android:gravity="center">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/customTextView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="نسخه جدید برنامه " android:textColor="#FFFCFE" android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical" android:background="#E1E1E1" android:layout_weight="1">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtTextMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="با  عرض سلام و خسته نباشید\n همانطور که که قول داده شد نسخه جدیدی از برنامه در مارکت بازار قابل دانود است و شما عزیزات می توانید با دانلود نسخه به روز تر هر چه بیشتر از برنامه لذت ببرید ."
+                android:textColor="#000000" />
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtDateMainDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="bottom"
+                android:text="4 مرداد 1393"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="vertical" android:background="#E1E1E1">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:src="#A2A29B" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" android:layout_marginTop="6dip">
+
+                <Button
+                    android:id="@+id/btnListMessage"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="لیست پیام" />
+
+                <Button
+                    android:id="@+id/btnBackMessage"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="بازگشت" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

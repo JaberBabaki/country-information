@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#eeeeee">
+
+    <LinearLayout
+        android:id="@+id/layHeader"
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:background="#1BBC9B"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left|center" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="8dip"
+                android:src="@drawable/resource_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right|center" >
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtNameContinent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="منابع"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="6dip"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/customTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:gravity="right"
+                    android:text="CustomTextView" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:src="#eeeeee" />
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/customTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:text="CustomTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:gravity="right"
+                    android:text="CustomTextView" />
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:src="#eeeeee" />
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:text="CustomTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:gravity="right"
+                    android:text="CustomTextView" />
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:src="#eeeeee" />
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:text="CustomTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView08"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:gravity="right"
+                    android:text="CustomTextView" />
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:src="#eeeeee" />
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:text="CustomTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:gravity="right"
+                    android:text="CustomTextView" />
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:src="#eeeeee" />
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/CustomTextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dip"
+                    android:text="CustomTextView" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

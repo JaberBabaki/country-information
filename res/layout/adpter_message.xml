@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layText"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/layReadOnRead"
+            android:layout_width="7dip"
+            android:layout_height="fill_parent"
+            android:background="#FF3B2F" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.4"
+                android:background="#FFFFFF"
+                android:gravity="right" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/txtTitleM"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center"
+                    android:text="بروزرسانی"
+                    android:textColor="#1BBC9B"
+                    android:textSize="20dip" android:layout_width="fill_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:background="#FFFFFF"
+                android:gravity="top|right" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/txtText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center"
+                    android:text="نسخه جدیدی از برنامه ...."
+                    android:textColor="#66666B" android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.33"
+                android:background="#FFFFFF"
+                android:gravity="left" >
+
+                <com.jaber.country.CustomTextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="right|center"
+                    android:text="4 شهریور 1393"
+                    android:textColor="#66666B" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

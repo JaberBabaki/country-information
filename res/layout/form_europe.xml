@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layHeader"
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:background="#0099cc"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent" android:layout_weight="0.5" android:gravity="left|center">
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_marginLeft="8dip"
+                android:src="@drawable/earth" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent" android:layout_weight="0.5" android:gravity="right|center">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtNameContinent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="Europa"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layParent"
+        android:layout_width="match_parent"
+        android:layout_height="262dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/imgE"
+            android:layout_width="match_parent"
+            android:layout_height="262dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgMainEuropa"
+                android:layout_width="fill_parent"
+                android:layout_height="262dip"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/a" />
+
+            <com.jaber.country.PageIndicator
+                android:id="@+id/indicatorEuropa"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layToolsEuropa"
+            android:layout_width="match_parent"
+            android:layout_height="62dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right|center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="36dip"
+                        android:layout_height="36dip"
+                        android:layout_marginLeft="4dip"
+                        android:src="@drawable/favo" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtSumEuropa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="34780"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#b2b2b2" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center" >
+
+                    <ImageView
+                        android:id="@+id/imgDataEuropa"
+                        android:layout_width="42dip"
+                        android:layout_height="42dip"
+                        android:layout_marginRight="12dip"
+                        android:src="@drawable/data" />
+
+                    <ImageView
+                        android:id="@+id/imgMapEuropa"
+                        android:layout_width="42dip"
+                        android:layout_height="52dip"
+                        android:layout_marginRight="12dip"
+                        android:src="@drawable/flag" />
+
+                    <ImageView
+                        android:id="@+id/imgStaticEuropa"
+                        android:layout_width="42dip"
+                        android:layout_height="42dip"
+                        android:layout_marginRight="12dip"
+                        android:src="@drawable/piepng" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layE"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="#33b5e5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgBackEurope"
+                    android:layout_width="52dip"
+                    android:layout_height="52dip"
+                    android:src="@drawable/larrow" />
+
+                <TextView
+                    android:id="@+id/txtNameConti"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="اروپا"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="62dip" />
+
+                <ImageView
+                    android:id="@+id/imgGoNextEurope"
+                    android:layout_width="52dip"
+                    android:layout_height="52dip"
+                    android:src="@drawable/rarrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstContent"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:clickable="false"
+        android:divider="@null" >
+
+        <!-- Preview: listitem=@layout/adapter_country -->
+
+    </ListView>
+
+</LinearLayout>

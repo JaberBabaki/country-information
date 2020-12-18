@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layHeader"
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:background="#1BBC9B"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left|center" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="8dip"
+                android:src="@drawable/earth" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right|center" >
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtNameContinent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:text="پیام ها"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstMessage"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:clickable="false"
+        android:divider="@null" >
+
+        <!-- Preview: listitem=@layout/adpter_message -->
+    </ListView>
+
+</LinearLayout>

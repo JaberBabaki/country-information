@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dip"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:background="#cccccc"
+    android:cacheColorHint="#00000000"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:orientation="vertical" android:background="#EEEEEE" android:layout_marginBottom="1dip" android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_send"
+            android:cacheColorHint="#00000000"
+            android:drawableRight="@drawable/search_grayy"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text" android:layout_marginRight="16dip" android:layout_marginLeft="16dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/customTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="پیام ها"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/message_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView07"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laySetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="تنظیمات"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView14"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/setting_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="right" >
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="معرفی به دوستان"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/tofriend_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView08"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layProduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="دیگر محصولات ما"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/playstor_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView09"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="امتیاز دهید"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/rate_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView10"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRsourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="منابع"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView06"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/resource" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView11"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="درباره ما"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView04"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/info_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView12"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right" android:layout_weight="0.7">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/CustomTextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dip"
+                android:gravity="right|center"
+                android:text="راهنما"
+                android:textColor="#777777" android:textSize="17dip"/>
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="6dip"
+                android:src="@drawable/help_gray" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImageView13"
+            android:layout_width="6dip"
+            android:layout_height="fill_parent"
+            android:src="#0C6D7D" android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:background="#EEEEEE">
+    </LinearLayout>
+
+</LinearLayout>

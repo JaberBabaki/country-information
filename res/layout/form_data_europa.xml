@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/layData"
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:background="#0099cc"
+        android:gravity="left|center" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent" android:layout_weight="0.5" android:gravity="left|center">
+
+            <ImageView
+                android:id="@+id/imgDataStaticEuropa"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="8dip"
+                android:src="@drawable/datae" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent" android:layout_weight="0.5" android:gravity="right|center">
+
+            <com.jaber.country.CustomTextView
+                android:id="@+id/txtDataHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dip"
+                android:gravity="right|center"
+                android:text="اروپا"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
